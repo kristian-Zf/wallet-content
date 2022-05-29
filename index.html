@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>javascript Tests</title>
+    </head>
+    <body>
+        <script>
+            async function connect(){
+                if (typeof window.ethereum !== "undefined"){
+                   await ethereum.request({method: "eth_requestAccounts"})
+                }
+            } 
+        </script>
+
+        <button id="connectButton" onclick="connect()">connect</button>
+    </body>
+
+</html>
